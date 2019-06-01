@@ -36,6 +36,8 @@ public class MainActivity extends AppCompatActivity
         animation = AnimationUtils.loadAnimation(this,R.anim.anim5);
         btnCreateContact = findViewById(R.id.btn_add_contact_id);
         btnCreateContact.startAnimation(animation);
+        
+        //i want to use this edti text as a search box . to for example search for contact
         edtSearch = findViewById(R.id.editText_actv_id);
         edtSearch.setSelected(false);
         recyclerView = findViewById(R.id.recycler_view_contact_list_id);
