@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="100"
+    >
+
+    <LinearLayout
+        android:weightSum="100"
+        android:layout_weight="40"
+        android:background="#2196F3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_weight="90"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:src="@drawable/def_user"
+            />
+
+        <TextView
+            android:id="@+id/act_show_single_contact_full_name_id"
+            android:layout_weight="10"
+            android:layout_width="match_parent"
+            android:layout_height="0dp" />
+    </LinearLayout>
+
+    <TableLayout
+        android:background="@color/B6"
+        android:layout_weight="60"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical">
+
+        <TableRow
+            android:weightSum="10"
+            android:id="@+id/act_show_single_contact_table_row_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp">
+            <TextView
+                android:paddingLeft="10dp"
+                android:backgroundTint="@color/Aqua"
+                android:background="@drawable/rounded_button"
+                android:text="First Name"
+                android:layout_weight="1.5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/act_show_single_contact_first_name_id"
+                android:background="#90FFFCFC"
+                android:layout_weight="8.5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </TableRow>
+
+        <TableRow
+            android:weightSum="10"
+            android:id="@+id/act_show_single_contact_table_row_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp">
+            <TextView
+                android:paddingLeft="10dp"
+                android:backgroundTint="@color/Aqua"
+                android:background="@drawable/rounded_button"
+                android:text="Family Name :"
+                android:layout_weight="1.5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/act_show_single_contact_last_name_id"
+                android:background="#90FFFCFC"
+                android:layout_weight="8.5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </TableRow>
+
+        <TableRow
+            android:weightSum="10"
+            android:id="@+id/act_show_single_contact_table_row_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp">
+            <TextView
+                android:paddingLeft="10dp"
+                android:backgroundTint="@color/Aqua"
+                android:background="@drawable/rounded_button"
+                android:text="Phone Number :"
+                android:layout_weight="1.5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/act_show_single_contact_phone_id"
+                android:background="#90FFFCFC"
+                android:layout_weight="8.5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </TableRow>
+
+        <TableRow
+            android:weightSum="10"
+            android:id="@+id/act_show_single_contact_table_row_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp">
+            <TextView
+                android:paddingLeft="10dp"
+                android:backgroundTint="@color/Aqua"
+                android:background="@drawable/rounded_button"
+                android:text="Address : "
+                android:layout_weight="1.5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/act_show_single_contact_address_id"
+                android:background="#90FFFCFC"
+                android:layout_weight="8.5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </TableRow>
+
+        <TableRow
+            android:weightSum="10"
+            android:id="@+id/act_show_single_contact_table_row_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp">
+            <TextView
+                android:paddingLeft="10dp"
+                android:backgroundTint="@color/Aqua"
+                android:background="@drawable/rounded_button"
+                android:text="Email Address : "
+                android:layout_weight="1.5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/act_show_single_contact_email_id"
+                android:background="#90FFFCFC"
+                android:layout_weight="8.5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </TableRow>
+
+    </TableLayout>
+
+</LinearLayout>

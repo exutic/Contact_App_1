@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/C5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:background="@drawable/rounded_button"
+        android:backgroundTint="#95F3E0E0"
+        android:gravity="center">
+
+        <TextView
+            android:layout_gravity="center"
+            android:textSize="30dp"
+            android:gravity="center"
+            android:hint="Creating Contact"
+            android:id="@+id/contact_information_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+
+    </LinearLayout>
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TableRow
+            android:weightSum="10"
+            android:id="@+id/table_row_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp">
+
+            <TextView
+                android:backgroundTint="#95F3E0E0"
+                android:gravity="center"
+                android:background="@drawable/rounded_button"
+                android:layout_weight="4"
+                android:text="Name "
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"/>
+            <EditText
+                android:singleLine="true"
+                android:maxEms="10"
+                android:imeOptions="actionDone"
+                android:id="@+id/edt_name_id"
+                android:layout_weight="6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"/>
+
+        </TableRow>
+
+        <TableRow
+            android:weightSum="10"
+            android:id="@+id/table_row_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp">
+
+            <TextView
+
+                android:backgroundTint="#95F3E0E0"
+                android:gravity="center"
+                android:background="@drawable/rounded_button"
+                android:layout_weight="4"
+                android:text="Sir Name "
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"/>
+            <EditText
+                android:singleLine="true"
+                android:maxEms="12"
+                android:imeOptions="actionDone"
+                android:id="@+id/edt_sir_name_id"
+                android:layout_weight="6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"/>
+
+        </TableRow>
+
+        <TableRow
+            android:weightSum="10"
+            android:id="@+id/table_row_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp">
+
+            <TextView
+
+                android:backgroundTint="#95F3E0E0"
+                android:gravity="center"
+                android:background="@drawable/rounded_button"
+                android:layout_weight="4"
+                android:text="Phone Number "
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"/>
+            <EditText
+                android:inputType="phone"
+                android:singleLine="true"
+                android:id="@+id/edt_phone_number_id"
+                android:maxEms="10"
+                android:imeOptions="actionDone"
+                android:layout_weight="6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"/>
+
+        </TableRow>
+
+        <TableRow
+            android:weightSum="10"
+            android:id="@+id/table_row_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp">
+
+            <TextView
+
+                android:backgroundTint="#95F3E0E0"
+                android:gravity="center"
+                android:background="@drawable/rounded_button"
+                android:layout_weight="4"
+                android:text="Address "
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"/>
+            <EditText
+                android:singleLine="true"
+                android:maxEms="15"
+                android:imeOptions="actionDone"
+                android:id="@+id/edt_address_id"
+                android:layout_weight="6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"/>
+
+        </TableRow>
+
+        <TableRow
+            android:weightSum="10"
+            android:id="@+id/table_row_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp">
+
+            <TextView
+
+                android:backgroundTint="#95F3E0E0"
+                android:gravity="center"
+                android:background="@drawable/rounded_button"
+                android:layout_weight="4"
+                android:text="Email "
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"/>
+            <EditText
+                android:inputType="textEmailAddress"
+                android:singleLine="true"
+                android:maxEms="15"
+                android:imeOptions="actionDone"
+                android:id="@+id/edt_email_id"
+                android:layout_weight="6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"/>
+
+        </TableRow>
+
+
+    </TableLayout>
+
+    <Button
+        android:id="@+id/btn_save_info_id"
+        android:textAllCaps="false"
+        android:textColor="@color/colorPrimary"
+        android:text="Save Contact Data"
+        android:layout_marginTop="25dp"
+        android:backgroundTint="#9CEEF8"
+        android:background="@drawable/rounded_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

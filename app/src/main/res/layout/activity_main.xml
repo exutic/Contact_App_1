@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/B7"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true" >
+
+    <TextView
+        android:id="@+id/txt_title_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:gravity="center_horizontal"
+        android:text="Contacts Application"
+        android:textColor="@color/A2"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--
+        android:focusedByDefault="false"
+        android:focusable="true"
+        -->
+
+    <EditText
+        android:singleLine="true"
+        android:imeOptions="actionSearch"
+        android:id="@+id/editText_actv_id"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/rounded_button"
+        android:backgroundTint="@color/B6"
+        android:drawableLeft="@drawable/search_icon_2"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:hint="Search"
+        android:paddingLeft="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_title_id"
+        >
+
+    </EditText>
+
+
+    <android.support.v7.widget.RecyclerView
+
+        android:id="@+id/recycler_view_contact_list_id"
+        android:layout_width="match_parent"
+        android:layout_height="468dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText_actv_id"
+        app:layout_constraintVertical_bias="1.0">
+
+
+    </android.support.v7.widget.RecyclerView>
+
+    <android.support.design.widget.CoordinatorLayout
+
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <Button
+            android:id="@+id/btn_add_contact_id"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/rounded_button"
+            android:backgroundTint="@color/A2"
+            android:text="+"
+            android:textColor="@color/B4"
+            android:textSize="35dp" />
+
+    </android.support.design.widget.CoordinatorLayout>
+
+
+</android.support.constraint.ConstraintLayout>
